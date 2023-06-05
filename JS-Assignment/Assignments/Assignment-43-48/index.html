@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+ <!-- ----------- Chapter 43-48 EVENTS ---------- -->
+    <!-- Task 1 -->
+    <a href="#" id="link" onclick="showAlert()">Click me</a>
+
+    <!-- Task 2 -->
+    <div>
+        <img class="mobImage" onclick="showAlert()" src="images/1.jpg" alt="#">
+        <img class="mobImage" onclick="showAlert()" src="images/2.jpg" alt="#">
+        <img class="mobImage" onclick="showAlert()" src="images/3.jpg" alt="#">
+        <img class="mobImage" onclick="showAlert()" src="images/4.jpg" alt="#">
+    </div>
+
+    <!-- Task 3 -->
+    <table  width = 50% align="center">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Class</th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>0</td>
+            <td>Maira</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Zara</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Sana</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Mirha</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Aisha</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Hiba</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Shifa</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Azra</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Izzah</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Erma</td>
+            <td>10</td>
+            <td id="row"><button onclick="delRecord(this)">Delete</button></td>
+        </tr>
+    </table>
+
+    <!-- Task 4 -->
+    <div>
+        <img src="images/1.jpg" id="img" onmouseover="changeImage('img','images/2.jpg')" onmouseout="changeImage('img','images/1.jpg')" alt="#" width="500px">
+    </div>
+
+    <!-- Task 5 -->
+    <p>Counter: <span id="counter">0</span></p> 
+    <button onclick="increase()">Increase</button>
+    <button onclick="decrease()">Decrease</button>
+
+    
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
